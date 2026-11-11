@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bob Animation Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">BALASH · BOB ANIMATION LAB</header>
+
+  <main class="stage" id="stage">
+    <div class="phone-wrap">
+      <div class="phone" id="phone" title="Tap to skip the animation">
+        <div class="screen" id="screen"></div>
+      </div>
+    </div>
+    <div class="under">
+      <p class="caption" id="caption"></p>
+      <span class="skip-hint" id="skipHint">Tap the phone or press Space to skip</span>
+    </div>
+  </main>
+
+  <nav class="controls" aria-label="Animations">
+    <button type="button" data-scene="welcome"><span class="num">1</span>Welcome</button>
+    <button type="button" data-scene="claim"><span class="num">2</span>Claim secured</button>
+    <button type="button" data-scene="reveal"><span class="num">3</span>The reveal</button>
+  </nav>
+
+  <script src="js/engine.js"></script>
+  <script src="js/bob.js"></script>
+  <script src="js/props.js"></script>
+  <script src="js/scene-welcome.js"></script>
+  <script src="js/scene-claim.js"></script>
+  <script src="js/scene-reveal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
